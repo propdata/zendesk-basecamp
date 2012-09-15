@@ -1,0 +1,9 @@
+## Zendesk
+[zendesk]
+subdomain = subdomain.zendesk.com
+username = user
+password = pass
+
+## Basecamp
+[basecamp]
+project = Backlog
