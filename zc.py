@@ -139,7 +139,7 @@ for bc_ticket in queue:
     todo_id = todo_uri.split('/todos/')[1].split('-')[0]
     todo_comment_data = {
         "content": bc_ticket['description'],
-        "subscribers": []
+        "subscribers": [bc.auto_assign_to]
     }
     logger.info("Adding ticket request as comment...")
     comment_uri = bci.create_todo_comment(project_id=bc_project['id'],
