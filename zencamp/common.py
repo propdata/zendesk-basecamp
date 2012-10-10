@@ -15,7 +15,8 @@ class AttributeInitType(type):
 
 class BasecampConfig(object):
     __metaclass__ = AttributeInitType
-    __slots__ = ['basecamp_id', 'username', 'password', 'project']
+    __slots__ = ['basecamp_id', 'username', 'password', 'project', 'todo_list',
+            'auto_assign_to']
     _config_name = "basecamp"
 
 

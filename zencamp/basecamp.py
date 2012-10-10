@@ -49,6 +49,37 @@ API_MAPPING = {
         'method': 'GET',
         'status': 200,
     },
+    # Todo Lists
+    'list_todo_lists': {
+        # /1965661/api/v1/projects/1274256/todolists.json
+        'path': '/api/v1/projects/{{project_id}}/todolists.json',
+        'method': 'GET',
+        'status': 200
+    },
+    'get_todo_list': {
+        # /1965661/api/v1/projects/1274256/todolists.json
+        'path': '/api/v1/projects/{{project_id}}/todolists/{{todo_list_id}}.json',
+        'method': 'GET',
+        'status': 200
+    },
+    'create_todo_list': {
+        # POST /api/v1/projects/1/todolists.json
+        'path': '/api/v1/projects/{{project_id}}/todolists.json',
+        'method': 'POST',
+        'status': 201
+    },
+    # Todos
+    'create_todo': {
+        'path': '/api/v1/projects/{{project_id}}//todolists/{{todo_list_id}}/todos.json',
+        'method': 'POST',
+        'status': 201
+    },
+    # Comments
+    'create_todo_comment': {
+        'path': '/api/v1/projects/{{project_id}}/todos/{{todo_id}}/comments.json',
+        'method': 'POST',
+        'status': 201
+    }
 }
 
 
