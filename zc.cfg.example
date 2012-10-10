@@ -6,4 +6,9 @@ password = pass
 
 ## Basecamp
 [basecamp]
+username = user
+password = pass
+basecamp_id = 123456
 project = Backlog
+todo_list = Zendesk Support - %d/%m/%Y
+auto_assign_to = 987654321
